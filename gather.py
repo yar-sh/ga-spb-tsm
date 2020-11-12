@@ -14,14 +14,14 @@ LINE_COLORS = ["rgb(218, 33, 40)", "rgb(0, 120, 191)", "rgb(72, 184, 94)", "rgb(
 
 def gen_driver() -> webdriver.Chrome:
     opts = Options()
-    #opts.add_argument("--headless")
+    opts.add_argument("--headless")
     opts.add_argument("--disable-gpu")
     opts.add_argument("--disable-3d-apis")
     opts.add_argument("--disable-plugins")
     opts.add_argument("--disable-accelerated-video")
     opts.add_argument("--disable-translate")
     opts.add_argument("--incognito")
-    #opts.add_argument("--kiosk")
+    opts.add_argument("--kiosk")
     opts.add_argument("--no-experiments")
     opts.add_argument("--no-pings")
     opts.add_argument("--no-default-browser-check")
@@ -41,19 +41,6 @@ def wait_until_ready(driver : webdriver.Chrome):
             return
 
         time.sleep(0.5)
-
-
-def pick_station(driver : webdriver.Chrome, n : int):
-    driver.find_element_by_css_selector(f"""body > div.metro-body > div > div.metro-scheme-container > div.metro-scheme-view._visible > div > div > svg:nth-child(2) > g:nth-child({n})""").click()
-    time.sleep(0.1)
-
-
-
-
-def reset_zoom(driver : webdriver.Chrome, val : int):
-    for i in range(val):
-        driver.find_element_by_css_selector("""body > div.metro-body > div > div.metro-scheme-container > div.metro-zoom-controls > div > div > div > div.zoom-control__zoom-out > button""").click()
-        time.sleep(0.1)
 
 
 def get_stations(driver : webdriver.Chrome) -> list:
