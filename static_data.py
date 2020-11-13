@@ -1,3 +1,12 @@
+# Multipliers for time, so we can account for data changing during the day due to unpredicted situations
+TRAVEL_TIME_SUBWAY_X = 1.0
+TRAVEL_TIME_WALK_X = 1.0
+TRAVEL_TIME_TAXI_X = 1.0
+TRAVEL_INTERVAL_SUBWAY_X = 1.0
+TRAVEL_INTERVAL_WALK_X = 0.0 # Explicitly zero, we do not need to wait for walking
+TRAVEL_INTERVAL_TAXI_X = 1.5
+
+
 TRANSFERS = [
     [13,30], # institut 1,2
     [12, 64], # push, zveni
@@ -7,6 +16,7 @@ TRANSFERS = [
     [28, 41], # nevsk, gost
     [63, 29, 49], # sad, senn, spass
 ]
+
 
 TAXI = [{
     "from": 19, # veteranov

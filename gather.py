@@ -5,6 +5,7 @@ from Station import Station
 from Neighbour import Neighbour
 from transliterate import translit
 from static_data import *
+from helpers import *
 import time
 import json
 import itertools
@@ -106,26 +107,6 @@ def get_travel_time(driver: webdriver.Chrome):
     return driver.execute_script("""
         return Number(document.getElementsByClassName("route-masstransit-step-view__details-info-left-content")[0].textContent.split(" ")[0]);
     """)
-
-
-def dump_stations_to_file(stations:list):
-    stations_json = [s.as_dict() for s in stations]
-
-    with open("stations.json", "w") as f:
-        json.dump(stations_json, f, indent=4, sort_keys=True)
-
-
-def load_stations_from_file() -> list:
-    with open("stations.json", "r") as f:
-        stations = json.load(f)
-        stations = [Station.from_dict(s) for s in stations]
-
-        # Correctly link neighboring stations
-        for s in stations:
-            for n in s.neighbours:
-                n.station = stations[n.station - 1]
-
-        return stations
 
 
 def gather_stations_info(driver:webdriver.Chrome, stations:list):
