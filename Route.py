@@ -1,5 +1,6 @@
 from dijkstra import Graph, DijkstraSPF
 from dijkstrawrap import *
+from Station import Station
 
 class Route:
     _counter = 0
@@ -12,6 +13,14 @@ class Route:
 
         Route._counter += 1
         self.id = Route._counter
+
+
+    def has_station(self, station: Station) -> bool:
+        for s in self.route_stops:
+            if s != None and s.id == station.id:
+                return True
+
+        return False
 
 
     def build_spf(self) -> None:

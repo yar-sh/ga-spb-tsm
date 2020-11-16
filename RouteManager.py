@@ -2,11 +2,14 @@ from Route import Route
 from dijkstrawrap import *
 import random
 
-
+# TODO: Rename to factory
 class RouteManager:
+    INSTANCE = None
+
     def __init__(self, stations : list):
         self.stations = stations
         self.graph = build_dijkstra_graph(self.stations)        
+        RouteManager.INSTANCE = self
 
 
     def get_fixed_length_route(self) -> Route:
