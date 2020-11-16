@@ -45,7 +45,7 @@ def wait_until_ready(driver : webdriver.Chrome):
 
 
 def get_stations(driver : webdriver.Chrome) -> list:
-    # In this JS query we explicitly ignore Зенит station, since it is closed and we won't be able to visit it
+    # In this JS statement we explicitly ignore Зенит station, since it is closed and we won't be able to visit it
     station_names = driver.execute_script("""
         return Array.from(document.getElementsByClassName("scheme-objects-view__label _hoverable")).map(x=> {
             let tspans = Array.from(x.getElementsByTagName("tspan"))
