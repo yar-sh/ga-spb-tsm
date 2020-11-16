@@ -2,17 +2,25 @@ from dijkstra import Graph, DijkstraSPF
 from dijkstrawrap import *
 
 class Route:
+    _counter = 0
+
     def __init__(self, rm):
         self.rm = rm
         self.route_stops = []
         self.spf = None
         self._wtt = 0
 
+        Route._counter += 1
+        self.id = Route._counter
+
+
     def build_spf(self) -> None:
         self.spf = DijkstraSPF(self.rm.graph, self.route_stops[0].id)
 
 
     def get_wtt(self) -> float:
+        # Lesser wtt <=> lesser distance <=> better
+
         # Doing some small value caching in here to avoid building a lot of graphs for re-calculating
         #   route's wtt
         if self._wtt != 0:
@@ -28,3 +36,8 @@ class Route:
 
         self._wtt = wtt
         return wtt
+
+    
+    def get_fitness(self) -> float:
+        # Fitness is the inverse of wtt <=> inverse of distance => greater fitness <=> better
+        return 1.0 / self.get_wtt()
