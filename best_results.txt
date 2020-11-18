@@ -1,0 +1,232 @@
+Final best wtt=522.0, fitness=0.0019157088122605363
+id=20, line=2, name=Parnas
+id=21, line=2, name=Prospekt Prosveschenija
+id=22, line=2, name=Ozerki
+id=23, line=2, name=Udel'naja
+id=24, line=2, name=Pionerskaja
+id=25, line=2, name=Chernaja rechka
+id=26, line=2, name=Petrogradskaja
+id=27, line=2, name=Gor'kovskaja
+id=29, line=2, name=Sennaja Ploschad'
+id=60, line=5, name=Chkalovskaja
+id=59, line=5, name=Krestovskij Ostrov
+id=57, line=5, name=Komendantskij Prospekt
+id=58, line=5, name=Staraja Derevnja
+id=61, line=5, name=Sportivnaja
+id=62, line=5, name=Admiraltejskaja
+id=63, line=5, name=Sadovaja
+id=49, line=4, name=Spasskaja
+id=28, line=2, name=Nevskij Prospekt
+id=41, line=3, name=Gostinyj dvor
+id=38, line=3, name=Begovaja
+id=39, line=3, name=Primorskaja
+id=40, line=3, name=Vasileostrovskaja
+id=42, line=3, name=Majakovskaja
+id=10, line=1, name=Ploschad' Vosstanija
+id=47, line=3, name=Obuhovo
+id=48, line=3, name=Rybatskoe
+id=46, line=3, name=Proletarskaja
+id=45, line=3, name=Lomonosovskaja
+id=44, line=3, name=Elizarovskaja
+id=43, line=3, name=Ploschad' Aleksandra Nevskogo-1
+id=52, line=4, name=Ploschad' Aleksandra Nevskogo-2
+id=55, line=4, name=Prospekt Bol'shevikov
+id=56, line=4, name=Ulitsa Dybenko
+id=54, line=4, name=Ladozhskaja
+id=53, line=4, name=Novocherkasskaja
+id=51, line=4, name=Ligovskij Prospekt
+id=50, line=4, name=Dostoevskaja
+id=11, line=1, name=Vladimirskaja
+id=12, line=1, name=Pushkinskaja
+id=70, line=5, name=Dunajskaja
+id=71, line=5, name=Shushary
+id=69, line=5, name=Prospekt Slavy
+id=68, line=5, name=Mezhdunarodnaja
+id=67, line=5, name=Buharestskaja
+id=66, line=5, name=Volkovskaja
+id=65, line=5, name=Obvodnyj kanal
+id=64, line=5, name=Zvenigorodskaja
+id=13, line=1, name=Tehnologicheskij institut-1
+id=31, line=2, name=Frunzenskaja
+id=33, line=2, name=Elektrosila
+id=34, line=2, name=Park Pobedy
+id=37, line=2, name=Kupchino
+id=36, line=2, name=Zvezdnaja
+id=35, line=2, name=Moskovskaja
+id=32, line=2, name=Moskovskie Vorota
+id=30, line=2, name=Tehnologicheskij institut-2
+id=16, line=1, name=Kirovskij zavod
+id=19, line=1, name=Prospekt Veteranov
+id=18, line=1, name=Leninskij prospekt
+id=17, line=1, name=Avtovo
+id=15, line=1, name=Narvskaja
+id=14, line=1, name=Baltijskaja
+id=9, line=1, name=Chernyshevskaja
+id=8, line=1, name=Ploschad' Lenina
+id=7, line=1, name=Vyborgskaja
+id=6, line=1, name=Lesnaja
+id=5, line=1, name=Ploschad' Muzhestva
+id=4, line=1, name=Politehnicheskaja
+id=3, line=1, name=Akademicheskaja
+id=2, line=1, name=Grazhdanskij prospekt
+id=1, line=1, name=Devjatkino
+
+
+Final best wtt=529.0, fitness=0.001890359168241966
+id=37, line=2, name=Kupchino
+id=36, line=2, name=Zvezdnaja
+id=35, line=2, name=Moskovskaja
+id=34, line=2, name=Park Pobedy
+id=33, line=2, name=Elektrosila
+id=32, line=2, name=Moskovskie Vorota
+id=31, line=2, name=Frunzenskaja
+id=30, line=2, name=Tehnologicheskij institut-2
+id=29, line=2, name=Sennaja Ploschad'
+id=49, line=4, name=Spasskaja
+id=62, line=5, name=Admiraltejskaja
+id=61, line=5, name=Sportivnaja
+id=57, line=5, name=Komendantskij Prospekt
+id=58, line=5, name=Staraja Derevnja
+id=59, line=5, name=Krestovskij Ostrov
+id=60, line=5, name=Chkalovskaja
+id=63, line=5, name=Sadovaja
+id=27, line=2, name=Gor'kovskaja
+id=26, line=2, name=Petrogradskaja
+id=25, line=2, name=Chernaja rechka
+id=22, line=2, name=Ozerki
+id=20, line=2, name=Parnas
+id=21, line=2, name=Prospekt Prosveschenija
+id=23, line=2, name=Udel'naja
+id=24, line=2, name=Pionerskaja
+id=39, line=3, name=Primorskaja
+id=38, line=3, name=Begovaja
+id=40, line=3, name=Vasileostrovskaja
+id=41, line=3, name=Gostinyj dvor
+id=28, line=2, name=Nevskij Prospekt
+id=13, line=1, name=Tehnologicheskij institut-1
+id=14, line=1, name=Baltijskaja
+id=17, line=1, name=Avtovo
+id=18, line=1, name=Leninskij prospekt
+id=19, line=1, name=Prospekt Veteranov
+id=16, line=1, name=Kirovskij zavod
+id=15, line=1, name=Narvskaja
+id=12, line=1, name=Pushkinskaja
+id=65, line=5, name=Obvodnyj kanal
+id=66, line=5, name=Volkovskaja
+id=67, line=5, name=Buharestskaja
+id=70, line=5, name=Dunajskaja
+id=71, line=5, name=Shushary
+id=69, line=5, name=Prospekt Slavy
+id=68, line=5, name=Mezhdunarodnaja
+id=64, line=5, name=Zvenigorodskaja
+id=11, line=1, name=Vladimirskaja
+id=50, line=4, name=Dostoevskaja
+id=51, line=4, name=Ligovskij Prospekt
+id=56, line=4, name=Ulitsa Dybenko
+id=55, line=4, name=Prospekt Bol'shevikov
+id=54, line=4, name=Ladozhskaja
+id=53, line=4, name=Novocherkasskaja
+id=52, line=4, name=Ploschad' Aleksandra Nevskogo-2
+id=43, line=3, name=Ploschad' Aleksandra Nevskogo-1
+id=44, line=3, name=Elizarovskaja
+id=47, line=3, name=Obuhovo
+id=48, line=3, name=Rybatskoe
+id=46, line=3, name=Proletarskaja
+id=45, line=3, name=Lomonosovskaja
+id=42, line=3, name=Majakovskaja
+id=10, line=1, name=Ploschad' Vosstanija
+id=9, line=1, name=Chernyshevskaja
+id=8, line=1, name=Ploschad' Lenina
+id=7, line=1, name=Vyborgskaja
+id=6, line=1, name=Lesnaja
+id=5, line=1, name=Ploschad' Muzhestva
+id=4, line=1, name=Politehnicheskaja
+id=3, line=1, name=Akademicheskaja
+id=2, line=1, name=Grazhdanskij prospekt
+id=1, line=1, name=Devjatkino
+
+
+
+
+
+
+with taxi:
+
+
+Final best wtt=491.0, fitness=0.002036659877800407
+id=37, line=2, name=Kupchino
+id=36, line=2, name=Zvezdnaja
+id=35, line=2, name=Moskovskaja
+id=34, line=2, name=Park Pobedy
+id=33, line=2, name=Elektrosila
+id=32, line=2, name=Moskovskie Vorota
+id=31, line=2, name=Frunzenskaja
+id=30, line=2, name=Tehnologicheskij institut-2
+id=14, line=1, name=Baltijskaja
+id=17, line=1, name=Avtovo
+id=18, line=1, name=Leninskij prospekt
+id=19, line=1, name=Prospekt Veteranov
+id=16, line=1, name=Kirovskij zavod
+id=15, line=1, name=Narvskaja
+id=13, line=1, name=Tehnologicheskij institut-1
+id=29, line=2, name=Sennaja Ploschad'
+id=49, line=4, name=Spasskaja
+id=52, line=4, name=Ploschad' Aleksandra Nevskogo-2
+id=43, line=3, name=Ploschad' Aleksandra Nevskogo-1
+id=42, line=3, name=Majakovskaja
+id=10, line=1, name=Ploschad' Vosstanija
+id=9, line=1, name=Chernyshevskaja
+id=8, line=1, name=Ploschad' Lenina
+id=7, line=1, name=Vyborgskaja
+id=6, line=1, name=Lesnaja
+id=5, line=1, name=Ploschad' Muzhestva
+id=4, line=1, name=Politehnicheskaja
+id=3, line=1, name=Akademicheskaja
+id=2, line=1, name=Grazhdanskij prospekt
+id=1, line=1, name=Devjatkino
+id=20, line=2, name=Parnas
+id=21, line=2, name=Prospekt Prosveschenija
+id=22, line=2, name=Ozerki
+id=23, line=2, name=Udel'naja
+id=24, line=2, name=Pionerskaja
+id=25, line=2, name=Chernaja rechka
+id=26, line=2, name=Petrogradskaja
+id=27, line=2, name=Gor'kovskaja
+id=28, line=2, name=Nevskij Prospekt
+id=41, line=3, name=Gostinyj dvor
+id=40, line=3, name=Vasileostrovskaja
+id=39, line=3, name=Primorskaja
+id=38, line=3, name=Begovaja
+id=57, line=5, name=Komendantskij Prospekt
+id=58, line=5, name=Staraja Derevnja
+id=59, line=5, name=Krestovskij Ostrov
+id=60, line=5, name=Chkalovskaja
+id=61, line=5, name=Sportivnaja
+id=62, line=5, name=Admiraltejskaja
+id=63, line=5, name=Sadovaja
+id=69, line=5, name=Prospekt Slavy
+id=70, line=5, name=Dunajskaja
+id=71, line=5, name=Shushary
+id=68, line=5, name=Mezhdunarodnaja
+id=67, line=5, name=Buharestskaja
+id=66, line=5, name=Volkovskaja
+id=65, line=5, name=Obvodnyj kanal
+id=64, line=5, name=Zvenigorodskaja
+id=12, line=1, name=Pushkinskaja
+id=11, line=1, name=Vladimirskaja
+id=50, line=4, name=Dostoevskaja
+id=51, line=4, name=Ligovskij Prospekt
+id=55, line=4, name=Prospekt Bol'shevikov
+id=56, line=4, name=Ulitsa Dybenko
+id=54, line=4, name=Ladozhskaja
+id=53, line=4, name=Novocherkasskaja
+id=44, line=3, name=Elizarovskaja
+id=45, line=3, name=Lomonosovskaja
+id=46, line=3, name=Proletarskaja
+id=47, line=3, name=Obuhovo
+id=48, line=3, name=Rybatskoe
+
+
+
+
+

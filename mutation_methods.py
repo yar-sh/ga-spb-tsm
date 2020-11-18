@@ -91,3 +91,39 @@ def get_inversion_mutation():
         return mutated_offspring
 
     return inversion_mutation
+
+
+def get_scramble_mutation():
+    def scramble_mutation(offspring: list) -> list: # aka IVM
+        mutated_offspring = []
+
+        for o in offspring:
+            route_len = len(o.route_stops)
+
+            cutoff_1 = random.randrange(route_len + 1)
+            cutoff_2 = random.randrange(route_len + 1)
+
+            cut_start = min(cutoff_1, cutoff_2)
+            cut_end = max(cutoff_1, cutoff_2)
+
+            cut_piece = o.route_stops[cut_start:cut_end]
+            random.shuffle(cut_piece)
+
+            mutated_o = Route(RouteManager.INSTANCE)
+
+            for i in range(cut_start):
+                mutated_o.route_stops.append(o.route_stops[i])
+
+            for s in cut_piece:
+                mutated_o.route_stops.append(s)
+
+            for i in range(cut_end, route_len):
+                mutated_o.route_stops.append(o.route_stops[i])
+
+            mutated_o.build_spf()
+
+            mutated_offspring.append(mutated_o)
+
+        return mutated_offspring
+
+    return scramble_mutation

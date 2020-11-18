@@ -13,10 +13,9 @@ if __name__ == "__main__":
     print("Wtt: ", path_info["time"])
 
     print("Path: ")
-    t = 0
-    for s in path_info["stations"]:
-        new_t = path_info["spf"].get_distance(s.id)
-        print(f"t={new_t},", s.flat_str())
-        t = new_t
+    for i in range(len(path_info["stations"])):
+        s = path_info["stations"][i]
+        t = path_info["stop_times"][i]
+        print(f"t={t},", s.flat_str())
 
 

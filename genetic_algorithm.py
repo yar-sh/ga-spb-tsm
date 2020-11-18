@@ -3,10 +3,9 @@ from RouteManager import RouteManager
 from selection_methods import *
 from crossover_methods import *
 from mutation_methods import *
-import operator
 
 
-def new_generation(population: list, selection_method, crossover_method, mutation_method) -> tuple:
+def new_generation(population: list, pool_size: int, selection_method, crossover_method, mutation_method) -> tuple:
     avg_wtt_start = 0
     avg_fitness_start = 0
     avg_wtt_end = 0
@@ -27,7 +26,7 @@ def new_generation(population: list, selection_method, crossover_method, mutatio
     #
     # Creating a mating pool by using a provided selection_method
     #
-    mating_pool = selection_method(population)
+    mating_pool = selection_method(population, pool_size)
 
     #
     # Printing out the number of times each chromosome occurs in a mating pool
@@ -66,18 +65,26 @@ def new_generation(population: list, selection_method, crossover_method, mutatio
     return new_population
 
 
-def ga(generations: int, population_size: int, rm: RouteManager, selection_name: str, crossover_name: str, mutation_name: str, tournament_size:int):
+def ga(generations: int, population_size: int, rm: RouteManager, selection_name: str, crossover_name: str, mutation_name: str, tournament_size:int, pool_size:int):
     population = [ rm.get_fixed_length_route() for i in range(population_size) ]
 
     # Determine the correct selection method
     if selection_name == "tournament":
         selection_method = get_tournament_selection(tournament_size)
+    elif selection_name == "random":
+        selection_method = get_random_selection()
+    elif selection_name == "truncation":
+        selection_method = get_truncation_selection()
+    elif selection_name == "proportion":
+        selection_method = get_proportion_selection()
     else:
         raise Exception("Selection method not implemented")
 
     # Determine the correct crossover method
     if crossover_name == "ordered":
         crossover_method = get_ordered_crossover()
+    elif crossover_name == "cycle":
+        crossover_method = get_cycle_crossover()
     else:
         raise Exception("Crossover method not implemented")
 
@@ -88,14 +95,16 @@ def ga(generations: int, population_size: int, rm: RouteManager, selection_name:
         mutation_method = get_swap_mutation()
     elif mutation_name == "simple_inversion":
         mutation_method = get_simple_inversion_mutation()
+    elif mutation_name == "scramble":
+        mutation_method = get_scramble_mutation()
     else:
-        raise Exception("Inversion method not implemented")
+        raise Exception("Mutation method not implemented")
 
     best_route = population[0]
 
     for i in range(generations):
         print(f"\nGeneration #{i+1}")
-        population = new_generation(population, selection_method=selection_method, crossover_method=crossover_method, mutation_method=mutation_method)
+        population = new_generation(population, pool_size=pool_size, selection_method=selection_method, crossover_method=crossover_method, mutation_method=mutation_method)
 
         # Sort routes in the population by their fitness, higher fitness at the top
         ranked_population = sorted(population, key=lambda x: x.get_wtt())
@@ -114,11 +123,12 @@ if __name__ == "__main__":
     rm = RouteManager(stations)
 
     ga(
-        generations=300,
+        generations=1000,
         population_size=1000,
         selection_name="tournament",
         crossover_name="ordered",
         mutation_name="simple_inversion",
+        pool_size=1000, # How many chromosomes to select for the mating pool
         tournament_size=50, # Used ONLY in tournament selection method
         rm=rm,
     )

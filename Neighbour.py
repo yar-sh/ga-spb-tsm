@@ -17,3 +17,13 @@ class Neighbour:
             return TRAVEL_TIME_TAXI_X * self.travel_time + TRAVEL_INTERVAL_TAXI_X * self.travel_interval
         else:
             raise Exception("Aaaaaa panic")
+
+    def get_travel_time(self) -> float:
+        if self.travel_method == "subway":
+            return TRAVEL_TIME_SUBWAY_X * self.travel_time
+        elif self.travel_method == "walk":
+            return TRAVEL_TIME_WALK_X * self.travel_time
+        elif self.travel_method == "taxi":
+            return TRAVEL_TIME_TAXI_X * self.travel_time
+        else:
+            raise Exception("Aaaaaa panic")
