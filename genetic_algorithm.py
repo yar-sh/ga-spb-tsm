@@ -68,6 +68,11 @@ def new_generation(population: list, pool_size: int, selection_method, crossover
 def ga(generations: int, population_size: int, rm: RouteManager, selection_name: str, crossover_name: str, mutation_name: str, tournament_size:int, pool_size:int):
     population = [ rm.get_fixed_length_route() for i in range(population_size) ]
 
+    # Initial population could take more than a day
+    #print('Total random routes:', population_size)
+    #print(population[0].get_wtt(), 'minutes')
+    #return
+
     # Determine the correct selection method
     if selection_name == "tournament":
         selection_method = get_tournament_selection(tournament_size)
@@ -111,11 +116,13 @@ def ga(generations: int, population_size: int, rm: RouteManager, selection_name:
 
         if ranked_population[0].get_wtt() < best_route.get_wtt():
             best_route = ranked_population[0]
-            print(f"\tNew best: wtt={best_route.get_wtt()}, fitness={best_route.get_fitness()}")
+            print(f"\t\t\t\t\t\t\t\t\t\t\tNew best: wtt={best_route.get_wtt()}, fitness={best_route.get_fitness()}")
 
     print(f"Final best wtt={best_route.get_wtt()}, fitness={best_route.get_fitness()}")
     for s in best_route.route_stops:
         print(s.flat_str())
+
+    print([s.id for s in best_route.route_stops])
 
 
 if __name__ == "__main__":
@@ -123,7 +130,7 @@ if __name__ == "__main__":
     rm = RouteManager(stations)
 
     ga(
-        generations=1000,
+        generations=150,
         population_size=1000,
         selection_name="tournament",
         crossover_name="ordered",

@@ -1,10 +1,10 @@
 # Multipliers for time, so we can account for data changing during the day due to unpredicted situations
 TRAVEL_TIME_SUBWAY_X = 1.0
 TRAVEL_TIME_WALK_X = 1.0
-TRAVEL_TIME_TAXI_X = 100000.0 # We can set this to some high value to avoid including taxi routes entirely
+TRAVEL_TIME_TAXI_X = 1.0 # We can set this to some high value to avoid including taxi routes entirely
 TRAVEL_INTERVAL_SUBWAY_X = 1.0
 TRAVEL_INTERVAL_WALK_X = 0.0 # Explicitly zero, we do not need to wait for walking
-TRAVEL_INTERVAL_TAXI_X = 100000.0
+TRAVEL_INTERVAL_TAXI_X = 1.0
 
 
 TRANSFERS = [

@@ -33,6 +33,9 @@ def get_random_selection():
 
 
 def get_truncation_selection():
+    # THIS IS BROKEN!!!!
+    # I just realized it does nothing - it returns the same population it gets as an input, just
+    # ordered differently. God I am stupid.
     def truncation_selection(population: list, pool_size: int) -> list:
         mating_pool = []
 

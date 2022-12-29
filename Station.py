@@ -57,7 +57,7 @@ class Station:
             s += ", neighbours:\n"
 
         for n in self.neighbours:
-            s += f"\tinterval={n.travel_interval}, time={n.travel_time}, station ==> {n.station.flat_str()}\n"
+            s += f"\tinterval={n.travel_interval}, time={n.travel_time}, method={n.travel_method}, station ==> {n.station.flat_str()}\n"
 
         return s
 
